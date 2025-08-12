@@ -2,33 +2,49 @@ library(ggplot2)
 library(dplyr)
 library(wesanderson)
 
-meso <- read.csv('meso.csv', header=FALSE)
-thermo <- read.csv('thermo.csv', header=FALSE)
-hyper <- read.csv('hyper.csv', header=FALSE)
+growth_temps <- read.csv('growth_temps.txt', sep='\t', header=FALSE)
+colnames(growth_temps) <-c('genus', 'OGT')
+growth_temps <- growth_temps[c('genus', 'OGT')]
 
-colnames(meso) <- c("Z", "sem")
-colnames(thermo) <- c("Z", "sem")
-colnames(hyper) <- c("Z", "sem")
+summary <- read.csv('filtered_assemblies.csv', sep=',')
+summary_gc <- summary[c('genus', 'gc_percent')]
 
-meso$Group <- "Mesophiles"
-thermo$Group <- "Thermophiles"
-hyper$Group <- "Hyperthermophiles"
+merged <- merge(growth_temps, summary_gc, by='genus')
 
-meso$Codon <- seq_len(nrow(meso)) + 1
-thermo$Codon <- seq_len(nrow(thermo)) + 1
-hyper$Codon <- seq_len(nrow(hyper)) + 1
+model <- lm(gc_percent ~ OGT, data = merged)
+print(summary(model))
 
-combined <- bind_rows(meso, thermo, hyper)
+graph <- ggplot(merged, aes(x=OGT, y=gc_percent)) +
+	geom_point() +
+	geom_smooth(method='lm') +
+	labs(title='Genome GC Content vs OGT', y='GC Content', x='Optimum Growth Temperature(°C)') +
+
+ggsave('lin_reg.png', plot=graph, width=6, height=4)
+
+mesophiles <- subset(merged, OGT<50)
+thermophiles <- subset(merged, OGT>=50 & OGT<80)
+hyperthermophile <- subset(merged, OGT>=80)
+
+mesophiles$Group <- "Mesophiles"
+thermophiles$Group <- "Thermophiles"
+hyperthermophile$Group <- "Hyperthermophiles"
+
+combined <- bind_rows(mesophiles, thermophiles, hyperthermophile)
 combined$Group <- factor(combined$Group, levels = c("Mesophiles", "Thermophiles", "Hyperthermophiles"))
+
+res.aov <- aov(gc_percent ~ Group, data=combined)
+print(summary(res.aov))
 
 pal <- wes_palette('Darjeeling1', 4)
 pal <- pal[c(2, 4, 1)]
 
-graph <- ggplot(data=combined, aes(x=Codon, y=Z, group=Group, color=Group, shape=Group)) +
-  geom_errorbar(aes(ymin=Z - sem, ymax=Z + sem), width=0.25) +
-  geom_line() + geom_point(size=3) +
-  scale_x_continuous(breaks = combined$Codon[seq(1, length(combined$Codon), by = 2)]) +
-  scale_color_manual(values = pal) +
-  labs(title='Codon GC3 Bias', y='Z-Score')
-
-ggsave('gc3.png', plot=graph, width=6, height=4)
+violin <- ggplot(combined, aes(x=Group, y=gc_percent, fill=Group)) +
+	geom_violin() +
+	geom_boxplot(width=0.2, fill='white') +
+	labs(title='Genome GC Content', y='GC Content', x=NULL) +
+	theme_bw() +
+	annotate('text', x=1.5, y=max(combined$gc_percent)+2, label='ns') +
+	annotate('text', x=2.5, y=max(combined$gc_percent)+2, label='ns') +
+	scale_fill_manual(values = pal)
+	
+ggsave('violin.png', plot=violin, width=6, height=4)
