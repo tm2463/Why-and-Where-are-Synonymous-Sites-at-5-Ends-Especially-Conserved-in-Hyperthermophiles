@@ -1,0 +1,301 @@
+#NEXUS
+[R-package APE, Mon Jun 23 13:42:37 2025]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 144;
+	TAXLABELS
+		Halomicrobium
+		Thermofilum
+		Infirmifilum
+		Pyrobaculum
+		Thermoproteus
+		Vulcanisaeta
+		Caldivirga
+		Fervidicoccus
+		Saccharolobus
+		Sulfuracidifex
+		Acidianus
+		Metallosphaera
+		Sulfurisphaera
+		Stygiolobus
+		Sulfolobus
+		Aeropyrum
+		Acidilobus
+		Caldisphaera
+		Thermosphaera
+		Desulfurococcus
+		Thermogladius
+		Staphylothermus
+		Pyrodictium
+		Hyperthermus
+		Pyrofollis
+		Pyrolobus
+		Ignicoccus
+		Conexivisphaera
+		Nitrosopumilus
+		Nitrosarchaeum
+		Nitrososphaera
+		Candidatus
+		Promethearchaeum
+		Nanobdella
+		Thermococcus
+		Palaeococcus
+		Pyrococcus
+		Methanobrevibacter
+		Methanosphaera
+		Methanobacterium
+		Methanothermobacter
+		Methanofervidicoccus
+		Methanococcus
+		Methanothermococcus
+		Methanotorris
+		Methanocaldococcus
+		Methanopyrus
+		Acidiplasma
+		Ferroplasma
+		Picrophilus
+		Oxyplasma
+		Thermoplasma
+		Cuniculiplasma
+		Aciduliprofundum
+		Methanomethylophilus
+		Methanonatronarchaeum
+		Archaeoglobus
+		Geoglobus
+		Ferroglobus
+		Methanosalsum
+		Methanohalobium
+		Methanolobus
+		Methanomethylovorans
+		Methanohalophilus
+		Methanococcoides
+		Methanosarcina
+		Methanimicrococcus
+		Methanolapillus
+		Methanothrix
+		Methanocella
+		Methanoplanus
+		Methanolacinia
+		Methanochimaera
+		Methanomicrobium
+		Methanogenium
+		Methanospirillum
+		Methanosphaerula
+		Methanoregula
+		Methanoculleus
+		Methanofollis
+		Methanocorpusculum
+		Halobacterium
+		Halarchaeum
+		Salarchaeum
+		Halodesulfurarchaeum
+		Halanaeroarchaeum
+		Halalkaliarchaeum
+		Halohasta
+		Halolamina
+		Halorarum
+		Halobaculum
+		Halopenitus
+		Halorubrum
+		Salinigranum
+		Halobellus
+		Haloquadratum
+		Halogeometricum
+		Haloferax
+		Haloprofundus
+		Haloplanus
+		Salinirarus
+		Natrinema
+		Haloterrigena
+		Halopiger
+		Natrialba
+		Natrarchaeobaculum
+		Natronorubrum
+		Natronobacterium
+		Halosolutus
+		Natronococcus
+		Halostagnicola
+		Natronosalvus
+		Halovivax
+		Natrononativus
+		Salinilacihabitans
+		Natronobeatus
+		Halomontanus
+		Halovalidus
+		Natrialbaceae
+		Natribaculum
+		Natranaeroarchaeum
+		Salinarchaeum
+		Haladaptatus
+		Halomicrococcus
+		Halorussus
+		Halococcus
+		Natronorarus
+		Halalkalicoccus
+		Haloglomus
+		Salinirubellus
+		Natronomonas
+		Halorarius
+		Halosegnis
+		Actinarchaeum
+		Halocatena
+		Halomarina
+		Salinibaculum
+		Halosimplex
+		Halapricum
+		Halorhabdus
+		Halococcoides
+		Halovenus
+		Halorientalis
+		Haloarcula
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Halomicrobium,
+		2	Thermofilum,
+		3	Infirmifilum,
+		4	Pyrobaculum,
+		5	Thermoproteus,
+		6	Vulcanisaeta,
+		7	Caldivirga,
+		8	Fervidicoccus,
+		9	Saccharolobus,
+		10	Sulfuracidifex,
+		11	Acidianus,
+		12	Metallosphaera,
+		13	Sulfurisphaera,
+		14	Stygiolobus,
+		15	Sulfolobus,
+		16	Aeropyrum,
+		17	Acidilobus,
+		18	Caldisphaera,
+		19	Thermosphaera,
+		20	Desulfurococcus,
+		21	Thermogladius,
+		22	Staphylothermus,
+		23	Pyrodictium,
+		24	Hyperthermus,
+		25	Pyrofollis,
+		26	Pyrolobus,
+		27	Ignicoccus,
+		28	Conexivisphaera,
+		29	Nitrosopumilus,
+		30	Nitrosarchaeum,
+		31	Nitrososphaera,
+		32	Candidatus,
+		33	Promethearchaeum,
+		34	Nanobdella,
+		35	Thermococcus,
+		36	Palaeococcus,
+		37	Pyrococcus,
+		38	Methanobrevibacter,
+		39	Methanosphaera,
+		40	Methanobacterium,
+		41	Methanothermobacter,
+		42	Methanofervidicoccus,
+		43	Methanococcus,
+		44	Methanothermococcus,
+		45	Methanotorris,
+		46	Methanocaldococcus,
+		47	Methanopyrus,
+		48	Acidiplasma,
+		49	Ferroplasma,
+		50	Picrophilus,
+		51	Oxyplasma,
+		52	Thermoplasma,
+		53	Cuniculiplasma,
+		54	Aciduliprofundum,
+		55	Methanomethylophilus,
+		56	Methanonatronarchaeum,
+		57	Archaeoglobus,
+		58	Geoglobus,
+		59	Ferroglobus,
+		60	Methanosalsum,
+		61	Methanohalobium,
+		62	Methanolobus,
+		63	Methanomethylovorans,
+		64	Methanohalophilus,
+		65	Methanococcoides,
+		66	Methanosarcina,
+		67	Methanimicrococcus,
+		68	Methanolapillus,
+		69	Methanothrix,
+		70	Methanocella,
+		71	Methanoplanus,
+		72	Methanolacinia,
+		73	Methanochimaera,
+		74	Methanomicrobium,
+		75	Methanogenium,
+		76	Methanospirillum,
+		77	Methanosphaerula,
+		78	Methanoregula,
+		79	Methanoculleus,
+		80	Methanofollis,
+		81	Methanocorpusculum,
+		82	Halobacterium,
+		83	Halarchaeum,
+		84	Salarchaeum,
+		85	Halodesulfurarchaeum,
+		86	Halanaeroarchaeum,
+		87	Halalkaliarchaeum,
+		88	Halohasta,
+		89	Halolamina,
+		90	Halorarum,
+		91	Halobaculum,
+		92	Halopenitus,
+		93	Halorubrum,
+		94	Salinigranum,
+		95	Halobellus,
+		96	Haloquadratum,
+		97	Halogeometricum,
+		98	Haloferax,
+		99	Haloprofundus,
+		100	Haloplanus,
+		101	Salinirarus,
+		102	Natrinema,
+		103	Haloterrigena,
+		104	Halopiger,
+		105	Natrialba,
+		106	Natrarchaeobaculum,
+		107	Natronorubrum,
+		108	Natronobacterium,
+		109	Halosolutus,
+		110	Natronococcus,
+		111	Halostagnicola,
+		112	Natronosalvus,
+		113	Halovivax,
+		114	Natrononativus,
+		115	Salinilacihabitans,
+		116	Natronobeatus,
+		117	Halomontanus,
+		118	Halovalidus,
+		119	Natrialbaceae,
+		120	Natribaculum,
+		121	Natranaeroarchaeum,
+		122	Salinarchaeum,
+		123	Haladaptatus,
+		124	Halomicrococcus,
+		125	Halorussus,
+		126	Halococcus,
+		127	Natronorarus,
+		128	Halalkalicoccus,
+		129	Haloglomus,
+		130	Salinirubellus,
+		131	Natronomonas,
+		132	Halorarius,
+		133	Halosegnis,
+		134	Actinarchaeum,
+		135	Halocatena,
+		136	Halomarina,
+		137	Salinibaculum,
+		138	Halosimplex,
+		139	Halapricum,
+		140	Halorhabdus,
+		141	Halococcoides,
+		142	Halovenus,
+		143	Halorientalis,
+		144	Haloarcula
+	;
+	TREE * UNTITLED = [&U] (1:0.199646,(((((((((((((((((((((2:0.397917,3:0.462653):0.25977,((4:0.316391,5:0.356296):0.469411,(6:0.362157,7:0.651978):0.169141):0.199951):0.087209,((((8:0.679876,(((9:0.260229,10:0.35609):0.093817,(11:0.200112,12:0.354333):0.071284):0.034056,(13:0.296549,(14:0.28209,15:0.224267):0.036337):0.064203):0.365744):0.064494,(16:0.635473,(17:0.296471,18:0.481291):0.141557):0.178653):0.195811,((((19:0.307489,20:0.40678):0.071898,21:0.654884):0.05894,22:0.32214):0.315615,(((23:0.310208,24:0.21411):0.05726,25:0.254756):0.090423,26:0.348713):0.114894):0.044251):0.075485,27:0.559401):0.111789):0.098721,((28:0.606119,((29:0.109058,30:0.201422):0.480188,31:0.524186):0.248404):0.249513,32:0.850988):0.139321):0.063549,33:1.271798):0.035056,34:1.482872):0.12749,((35:0.256027,36:0.146612):0.05836,37:0.574855):0.310283):0.102273,(((((38:0.399717,39:0.269501):0.141542,40:0.196615):0.107586,41:0.22832):0.286796,(((42:0.316033,(43:0.349666,44:0.152122):0.197994):0.062606,45:0.136381):0.12856,46:0.258042):0.266951):0.109086,47:0.719398):0.042365):0.05929,(((((((48:0.254927,49:0.270738):0.073122,50:0.812576):0.142095,51:0.422617):0.135209,52:0.364449):0.097159,53:0.423712):0.403993,54:0.684789):0.123818,55:0.810961):0.13382):0.044096,56:0.657534):0.069033,(57:0.343781,(58:0.276868,59:0.209402):0.125234):0.263663):0.072406,(((((((60:0.201735,61:0.386311):0.050733,62:0.270022):0.141794,63:0.286266):0.076022,(64:0.267189,65:0.246584):0.030478):0.066355,(66:0.674569,(67:0.175963,68:0.121503):0.221539):0.057836):0.129118,69:0.499735):0.047364,70:0.59007):0.050301):0.04153,(((((71:0.135712,72:0.199384):0.100162,(73:0.091052,74:0.193428):0.110815):0.058375,75:0.240541):0.117715,(((76:0.317688,(77:0.288995,78:0.334831):0.085195):0.035358,79:0.48189):0.029808,80:0.347836):0.275098):0.086367,81:0.35761):0.221584):0.464462,((82:0.207913,(83:0.170271,84:0.144787):0.077175):0.027678,(85:0.224018,86:0.26289):0.095144):0.081106):0.023297,((((87:0.209074,88:0.191037):0.043536,(89:0.212831,(90:0.153832,91:0.125908):0.052302):0.124513):0.051769,(92:0.195639,93:0.396453):0.053125):0.028241,(((94:0.239167,(((95:0.178336,96:0.298963):0.042966,97:0.362594):0.024632,98:0.098653):0.061278):0.017255,99:0.184016):0.018601,(100:0.161453,101:0.161907):0.041538):0.014739):0.048949):0.016257,(((((((((((102:0.128477,103:0.166029):0.026823,(104:0.076728,105:0.078521):0.119069):0.107635,((106:0.150466,107:0.13216):0.062229,108:0.148331):0.037223):0.009834,109:0.1773):0.013504,110:0.200624):0.028431,111:0.377227):0.031328,((112:0.300801,((113:0.363454,114:0.077259):0.012124,(115:0.234557,116:0.187513):0.04638):0.088724):0.018195,117:0.226617):0.00834):0.050546,118:0.142726):0.010862,(119:0.156953,120:0.235316):0.031709):0.061137,(121:0.337477,122:0.163424):0.034602):0.032007,((123:0.252405,124:0.126802):0.029419,125:0.243596):0.036106):0.090719):0.037361,(126:0.26297,(127:0.303238,128:0.16475):0.146682):0.02854):0.069737,((((129:0.368799,130:0.145262):0.052217,131:0.283996):0.014148,(132:0.273327,133:0.187546):0.10937):0.025076,((134:0.248509,135:0.16583):0.101404,136:0.171972):0.1761):0.026082):0.046039,(137:0.185456,138:0.306662):0.054097):0.055279,((139:0.203708,(140:0.148921,141:0.462149):0.039714):0.054635,142:0.284791):0.017019):0.036973,143:0.109799):0.031097,144:0.096734);
+END;
