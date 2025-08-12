@@ -40,6 +40,8 @@ violin <- ggplot(combined, aes(x=Group, y=gc_percent, fill=Group)) +
 	geom_boxplot(width=0.2, fill='white') +
 	labs(title='Genome GC Content', y='GC Content', x=NULL) +
 	theme_bw() +
+	annotate('text', x=1.5, y=max(combined$gc_percent)+2, label='ns') +
+	annotate('text', x=2.5, y=max(combined$gc_percent)+2, label='ns') +
 	scale_fill_viridis_d() #colorblind safe
 	
 ggsave('violin.png', plot=violin, width=6, height=4)
