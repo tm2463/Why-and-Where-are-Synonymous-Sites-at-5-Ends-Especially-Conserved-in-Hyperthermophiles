@@ -1,5 +1,6 @@
 library(ggplot2)
 library(dplyr)
+library(viridis)
 
 growth_temps <- read.csv('growth_temps.txt', sep='\t', header=FALSE)
 colnames(growth_temps) <-c('genus', 'OGT')
@@ -38,6 +39,7 @@ violin <- ggplot(combined, aes(x=Group, y=gc_percent, fill=Group)) +
 	geom_violin() +
 	geom_boxplot(width=0.2, fill='white') +
 	labs(title='Genome GC Content', y='GC Content', x=NULL) +
-	theme_bw()
+	theme_bw() +
+	scale_fill_viridis_d() #colorblind safe
 	
 ggsave('violin.png', plot=violin, width=6, height=4)
