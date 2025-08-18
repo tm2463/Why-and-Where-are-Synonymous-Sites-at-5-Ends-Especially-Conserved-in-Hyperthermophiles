@@ -21,7 +21,7 @@ Required Packages:
    - phangorn
    - ggplot2
    - dpylr
-- Terminal:
+- Command Line:
    - sra-tools
    - Salmon
    - IQTree
